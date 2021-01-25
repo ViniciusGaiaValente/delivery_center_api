@@ -10,7 +10,7 @@ O projeto foi desenvolvido com elixir e phoenix, seguindo os padrões do framewo
   - *Email*: viniciusgaiavalente@gmail.com
   - *Telefone*: (91) 98441-8961
 
-# Configuracao do projeto
+# Configuração do projeto
 
 ## API
 
@@ -42,7 +42,7 @@ config :delivery_center_api, DeliveryCenterApi.Repo,
     pool_size: 10
 ```
 
-Caso ainda náo tenha um banco de dados postgres pronto para uso, você pode configura-lo facilmente utilizando o docker.
+Caso ainda não tenha um banco de dados postgres pronto para uso, você pode configura-lo facilmente utilizando o docker.
  - Para instalar o docker siga os seguintes passos descritos em: [Instalando o Docker](https://docs.docker.com/engine/install/).
 
 Com o docker instalado faça o pull da imagem do postgres:
@@ -218,11 +218,11 @@ Depois, realiza o parse deste payload para o seguinte formato:
 
 E então os dados transformados são enviados para uma api externa (https://delivery-center-recruitment-ap.herokuapp.com/) que realiza algumas validações e em caso de erro, retorna a mensagem original.
 
-Com os dados validados, os mesmo são salvos no banco de dados e deoois retornados.
+Com os dados validados, os mesmo são salvos no banco de dados e deopois retornados.
 
   - GET para localhost:4000/api/order
 
-Esta operação lista todos os pedidos ('Orders') salvos no banco de dados, assim como os 'Items', 'Payments' e o 'Customer' associados ao mesmo. Os json de retorno, segue o padrão descrito a seguir:
+Esta operação lista todos os pedidos ('Orders') salvos no banco de dados, assim como os 'Items', 'Payments' e o 'Customer' associados ao mesmo. O json de retorno, segue o padrão descrito a seguir:
 
 ```json
 {
